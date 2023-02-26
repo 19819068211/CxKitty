@@ -1,5 +1,5 @@
 <div align="center">
-    <h1>超星学习通答题姬</h1>
+    <h1>超星学习通答题姬（已打包exe）</h1>
     <h2>CxKitty</h2>
     <img alt="Github Stars" src="https://img.shields.io/github/stars/SocialSisterYi/CxKitty">
     <img alt="Github Forks" src="https://img.shields.io/github/forks/SocialSisterYi/CxKitty">
@@ -15,6 +15,8 @@
 <span style="color: red"><b>Ps: 本项目不提供任何题库资源，有相关测试需求者请按照文档自行解决。本项目仅供学习参考使用，请在下载部署后24小时内删除，由于使用本项目不当所造成的挂科或不良学习记录作者一概不负责。</b></span>
 
 效果演示视频 https://www.bilibili.com/video/BV1yt4y1P7NF
+
+打包版exe网盘链接[cxkitty](https://wwzs.lanzouy.com/iZAaS0on9uli)
 
 ## ✨Features
 
@@ -67,6 +69,14 @@
 ### 💻本地化构建项目
 
 使用 Python 版本 >= 3.10.0
+
+直接运行
+```bash
+git clone 'https://github.com/SocialSisterYi/CxKitty'
+cd CxKitty
+pip install -r requirements.txt
+python main.py
+```
 
 clone 项目到本地，并使用 poetry 安装依赖和管理 venv
 
