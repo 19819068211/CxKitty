@@ -72,7 +72,7 @@
 
 直接运行
 ```bash
-git clone 'https://github.com/SocialSisterYi/CxKitty'
+git clone 'https://github.com/19819068211/CxKitty'
 cd CxKitty
 pip install -r requirements.txt
 python main.py
