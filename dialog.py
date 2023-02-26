@@ -83,7 +83,7 @@ def login(tui_ctx: Console, api: ChaoXingAPI):
                 time.sleep(1.0)
         # 手机号+密码登录
         else:
-            passwd = tui_ctx.input("[yellow]请输入密码 (隐藏)：", password=True)
+            passwd = tui_ctx.input("[yellow]请输入密码 (隐藏)：", password=False)  #密码保密请将False改成Ture，防止输错密码看不出
             status, result = api.login_passwd(uname, passwd)
             if status:
                 tui_ctx.print("[green]登录成功")
