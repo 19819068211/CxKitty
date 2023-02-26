@@ -1,6 +1,6 @@
 import json
 from typing import Union
-
+from os import system
 import requests
 from bs4 import BeautifulSoup
 from rich.layout import Layout
@@ -114,7 +114,9 @@ class ClassChapters:
                 + f"    ...任务点{chapter.point_finish}/{chapter.point_total}"
             )
         tui_ctx.update(Panel("\n".join(lines), title=f"《{self.name}》章节列表", border_style="blue"))
-
+        #在命令行控制台标题输出当前用户姓名、课程、章节名、当前章节进度
+        system(f"title 当前用户：{self.acc.name} * 当前课程：{self.name} * 当前章节：{self.chapters[index].name}   {chapter.point_finish}/{chapter.point_total}")
+  
     def fetch_point_status(self) -> None:
         "拉取章节任务点状态"
         resp = self.session.post(
